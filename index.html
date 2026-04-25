@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <link rel="stylesheet" type="text/css" href="ppstyle.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/cake13.gif">
+    <script src="draggable.js" defer></script>
+    <script src="soundonclick.js" defer></script>
+    <script src="ppjava.js" defer></script>
+
+    <title>happy pp day!</title>
+</head>
+<body>
+    <audio id="amogus" src="./assets/amogus.mp3"></audio>
+    <audio id="balltoss" src="./assets/balltoss.mp3"></audio>
+    <audio id="waltz" src="./assets/waltz.mp3"></audio>
+    <audio id="RetroTV" src="./assets/RetroTV.mp3"></audio>
+
+    <div id="main">
+        <div id="topborder2"></div>
+        <div id="topborder"></div>
+        
+        <div id="middle">
+            <div id="cloth"></div>
+            <img src="./assets/Cake.png"  style="display:none;position:absolute;top:-25px;left:0px;width:525px">
+            <img src="./assets/plate.png" class="noselect" id="plate" >
+            <img src="./assets/cakebody.png" class="noselect" id="cakebody">
+
+            <div class="cream glowing moveup" id="creamA" style="top:-26px;left:173px;">A</div>
+            <div class="strawb glowing moveup" id="strawb1" style="top:-1px;left:128px;">1</div>
+            
+            <div class="strawb glowing moveup" id="strawb2" style="top:-30px;left:236px;">2</div>
+            <div class="cream glowing moveup" id="creamB" style="top:-26px;left:287px;">B</div>
+            
+            <div class="strawb glowing moveup" id="strawb3" style="top:-1px;left:339px;">3</div>
+            <div class="cream glowing moveup" id="creamC" style="top:27px;left:369px;">C</div>
+            
+            <div class="strawb glowing moveup" id="strawb4" style="top:62px;left:403px;">4</div>
+            <div class="cream glowing moveup" id="creamD" style="top:103px;left:407px;">D</div>
+            
+            <div class="strawb glowing moveup" id="strawb5" style="top:152px;left:406px;">5</div>
+            <div class="cream glowing moveup" id="creamE" style="top:183px;left:369px;">E</div>
+            
+            <div class="strawb glowing moveup" id="strawb6" style="top:218px;left:338px;">6</div>
+            <div class="cream glowing moveup" id="creamF" style="top:235px;left:287px;">F</div>
+            
+            <div class="strawb glowing moveup" id="strawb7" style="top:248px;left:237px;">7</div>
+            
+            <div class="cream glowing moveup" id="creamJ" style="top:26px;left:83px;">J</div>
+            <div class="strawb glowing moveup" id="strawb10" style="top:69px;left:64px;">10</div>
+            
+            <div class="cream glowing moveup" id="creamI" style="top:110px;left:52px;">I</div>
+            <div class="strawb glowing moveup" id="strawb9" style="top:159px;left:62px;">9</div>
+            
+            <div class="cream glowing moveup" id="creamH" data-sound="amogus" style="top:192px;left:86px;">H</div>
+            <div class="strawb glowing moveup" id="strawb8" style="top:225px;left:127px;">8</div>
+            <div class="cream glowing moveup" id="creamG" style="top:237px;left:173px;">G</div>
+            
+            <img src="./assets/Biscuit2T.png" class="glowing moveup noselect" style="z-index:0;position:absolute;top:56px;left:157px;width:210px;">
+            
+            <img src="./assets/redribbon.png" class="moveup noselect" style="z-index:0;position:absolute;top:179px;left:211px;width:100px;filter:hue-rotate(15deg)">
+            <!-- <div id="candle1" class="glow bounce"></div> -->
+            <img src="./assets/candle1.png" class="glow bounce noselect" style="z-index: 0;position: absolute;top: 85px;left: 125px;width: 60px;height: 112px;">
+            <img src="./assets/candle2.png" class="glow bounce noselect" style="z-index:0;position:absolute;top:85px;left:339px;width:58px;">
+            
+            <img src="./assets/button1.png" class="spinning noselect" style="position:absolute;top:23px;left:-360px;width:65px;">
+            <img src="./assets/buttonfl2.png" class="spinning noselect" style="position:absolute;top:239px;left:-523px;width:72px;transform:rotate(-15deg);filter:hue-rotate(40deg) brightness(1.1)">
+            <img src="./assets/button2.png" class="spinning noselect" style="position:absolute;top:42px;right:-530px;width:68px;transform:rotate(-15deg)">
+            <img src="./assets/buttonfl.png" class="spinning noselect" style="position:absolute;top:243px;right:-307px;width:75px;transform:rotate(20deg)">
+
+            <img src="./assets/emma.PNG" 
+                data-sound="waltz"
+                data-enable-pause
+                class="funtime noselect draggable" 
+                style="position:absolute;width:200px;"
+            >
+            <img src="./assets/buttonh.png" class="funtime noselect draggable" style="position:absolute;width:65px;transform:rotate(5deg)">
+            <img src="./assets/buttonh2.png" class="funtime noselect draggable" style="position:absolute;width:67px;transform:rotate(-7deg)">
+            <!--<img src="./assets/buttonfl3.png" class="funtime noselect draggable" style="position:absolute;width:70px;transform:rotate(-10deg)">-->
+            <img src="./assets/buttonfl4.png" class="funtime noselect draggable" style="position:absolute;width:70px;transform:rotate(15deg)">
+            <img src="./assets/buttonfl5.png" class="funtime noselect draggable" style="position:absolute;width:70px;">
+            <img src="./assets/buttonfl6.png" class="funtime noselect draggable" style="position:absolute;width:70px;">
+            <img src="./assets/buttonfl7.png" class="funtime noselect draggable" style="position:absolute;width:72px;transform:rotate(24deg)">
+            <img src="./assets/button3.png" class="funtime noselect draggable" style="position:absolute;width:67px;">
+            <img src="./assets/button4.png" class="funtime noselect draggable" style="position:absolute;width:65px;">
+            
+            <!--data-enable-restart-->
+            <img src="./assets/buttona.png" 
+                data-sound="balltoss"
+                data-enable-pause
+                class="funtime noselect draggable spinning" 
+                style="position:absolute;width:72px;"
+            >
+
+            <img src="./assets/pppgift.png" 
+                data-sound="RetroTV"
+                data-enable-pause
+                class="clickglow bounce noselect"
+                style="position:absolute;width:170px;top:280px;left:317px;"
+            >
+
+            <div id="soty" class="clickglow">
+                <span class="sphidden">
+                    <img src="./assets/sweetday.gif" style="position:absolute;transform:scaleX(-1) rotate(25deg);top:0px;left:-55px;">
+                    <div class="msgcase" style="width:285px;height:240px;padding-left:60px;transform:scaleX(-1) rotate(28deg);top:30px;left:-376px;">
+                        <div class="msgbgO" style="mask-size:400px;width:400px;height:371px;">
+                            <div class="msg" style="mask-size:345px;width:345px;height:320px;margin-left:-172.5px;margin-top:-160px;"></div>
+                        </div>
+                        <div class="msgbox" style="width:280px">
+                            <p>
+                            <font class="pinktxt">HAPPY BIRTHDAY TO MY BEAUTIFUL WHORE PANPAN!!! 🥳</font><br>
+                            i hope you have an amazing day full of fun, treats, and presents!
+                            you are always the funniest, wittiest, and most talented person
+                            i know. i'm so proud to call you my best friend! I couldn't ask
+                            for a better one! thank you for always being awesome. i wish you
+                            a happy birthday and i love you lots!<br>
+                            🖍️<font class="fancytxt"> hart, chandy</font>
+                            </p>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            
+            <div id="hiwo" class="clickglow">
+                <span class="sphidden">
+                    <img src="./assets/happyday.gif" style="position:absolute;top:-20px;left:-45px;">
+                    <div class="msgcase" style="width:285px;height:240px;padding-left:60px;transform:rotate(-7deg);top:-52px;left:-465px;">
+                        <div class="msgbgP" style="mask-size:400px;width:400px;height:371px;">
+                            <div class="msg" style="mask-size:345px;width:345px;height:320px;margin-left:-172.5px;margin-top:-160px;"></div>
+                        </div>
+                        <div class="msgbox" style="width:280px">
+                            <p style="margin-top:25px;">
+                            <font class="pinktxt">YAYYY HAPPY HAPPY BIRTHDAY PANPAN!!!!!!!!</font>
+                            🍎🐞🐶🐱🌈 <br>
+                            i love u soo mach + im always super grateful to know u and
+                            that youre one of my best friends 🥺🥺 youer so awesome,
+                            funny and such a kind friend! i hope that your birthday is
+                            filled with so much fun, whimsy, joy and all things good!!!!
+                            #horesforever I LUV YOU!<br>
+                            🖍️<font class="fancytxt"> luv jini</font>
+                            </p>
+                        </div>
+                    </div>
+                </span>
+            </div>
+<!---- BIRTHDAY MESSAGES HERE ---->
+            <span class="sphidden draggable" id="sphiddenA">
+                <div class="msgcase">
+                    <div class="msgbgG">
+                        <div class="msg"></div>
+                    </div>
+                    <div class="msgbox">
+                        <p>
+                        <font class="pinktxt">HAPPY BIRTHDAY PP!!!</font>
+                        🍎🍎🍎APPLE ATTACK🍎🍎🍎APPLE ATTACK🍎🍎🍎 <br>
+                        🖍️<font class="fancytxt"> vi</font> 
+                        </p>
+                    </div>
+                </div>
+            </span>
+            <span class="sphidden draggable" id="sphidden2">
+                <div class="msgcase">
+                    <div class="msgbgP">
+                        <div class="msg"></div>
+                    </div>
+                    <div class="msgbox">
+                        <img src="./assets/bdayyyy.png" style="position:absolute;top:-5px;left:-3px;">
+                    </div>
+                </div>
+            </span>
+            <span class="sphidden draggable" id="sphiddenB">
+                <div class="msgcase">
+                    <div class="msgbgB">
+                        <div class="msg"></div>
+                    </div>
+                    <div class="msgbox">
+                        <p style="margin-top:-1px;">
+                        <font class="pinktxt">HAPPY HAPPY BIRTHDAY PANPAN!!</font>
+                        You are such a wonderful and creative person
+                        and I’m so happy to have gotten to know you! I hope you have the best day
+                        ever, you so deserve it! 🎂💕
+                        🩷<font class="fancytxt">, Chloe</font>
+                        </p>
+                    </div>
+                </div>
+            </span>
+            <span class="sphidden draggable" id="sphidden3">
+                <div class="msgcase">
+                    <div class="msgbgG">
+                        <div class="msg"></div>
+                    </div>
+                    <div class="msgbox">
+                        <p style="margin-top:0px;">
+                            <font class="pinktxt">HAPPY BIRTHDAY PANPAN YIPPEEEE</font>
+                            🎊💕🎂❤️🎊💕
+                            i hope this year treats u well and u have an awesome day
+                            🫶🫶🍎🧵🌻🐟<br>
+                            🖍️<font class="fancytxt"> emma</font>
+                        </p>
+                    </div>
+                </div>
+            </span>
+            <span class="sphidden draggable" id="sphiddenC">
+                <div class="msgcase">
+                    <div class="msgbgPu">
+                        <div class="msg"></div>
+                    </div>
+                    <div class="msgbox">
+                        <p style="margin-top:0px;">
+                            <font class="pinktxt">Happy birthday PP</font>
+                            I LOVE YOU MWAH i hope you have a wonderful and whimsical bday!
+                            I love always talking to you and hanging out ♡
+                            Lets see each other again soon ♡♡♡♡♡♡<br>
+                            🖍️<font class="fancytxt"> kami</font> 
+                        </p>
+                    </div>
+                </div>
+            </span>
+            <span class="sphidden draggable" id="sphidden4">
+                <div class="msgcase">
+                    <div class="msgbgO">
+                        <div class="msg"></div>
+                    </div>
+                    <div class="msgbox">
+                        <p style="margin-top:0px;">
+                            <font class="pinktxt">happy birthday panpan!!!!!!</font><br>
+                            hope you have a wonderful day filled with lots of love and
+                            yummy treats 🌼🎂🫶🥳🌼<br>
+                            🖍️<font class="fancytxt"> linnie 💛</font>
+                        </p>
+                    </div>
+                </div>
+            </span>
+            <span class="sphidden draggable" id="sphiddenD">
+                <div class="msgcase">
+                    <div class="msgbgB">
+                        <div class="msg"></div>
+                    </div>
+                    <div class="msgbox">
+                        <p style="margin:0px;">
+                            <font class="pinktxt">Happy Birthday Panpan!!</font>
+                            🎂💛💜 I’m happy to be able to call
+                            you my friend for all these years ☺️ Seeing your tweets
+                            on my tl..
+                        </p>
+                        <p class="readmore">
+                            click cream to read more!
+                        </p>
+                    </div>
+                </div>
+            </span>
+            <span class="sphidden draggable" id="sphidden5">
+                <div class="msgcase">
+                    <div class="msgbgP">
+                        <div class="msg"></div>
+                    </div>
+                    <div class="msgbox">
+                        <p style="margin-top:25px;">
+                            <font class="pinktxt">happy birthday panpan!!</font><br>
+                            i hope you have a lovely day filled
+                            with the things you adore!! 💖🎉🎈 <br>
+                            🖍️<font class="fancytxt"> azalea</font>
+                        </p>
+                    </div>
+                </div>
+            </span>
+            <span class="sphidden draggable" id="sphiddenE">
+                <div class="msgcase">
+                    <div class="msgbgPu">
+                        <div class="msg"></div>
+                    </div>
+                    <div class="msgbox">
+                        <p style="margin-top:5px;">
+                            <font class="pinktxt">HAPPY BIRTHDAY PANPAN!!!!!</font>
+                            💖🎊🕺 <br>
+                            you are awesome and i hope you have an epic day
+                            filled with love and joy ^_^ <br>
+                            HART U <br>
+                            🖍️<font class="fancytxt"> soren 🐰</font>
+                        </p>
+                    </div>
+                </div>
+            </span>
+            <span class="sphidden draggable" id="sphidden6">
+                <div class="msgcase">
+                    <div class="msgbgO">
+                        <div class="msg"></div>
+                    </div>
+                    <div class="msgbox">
+                        <p style="margin-top:6px;">
+                        <font class="pinktxt">Happy birthday Pancake!!!</font> 🎂🎉💖
+                        Thank you for being a long-time friend!! I hope you get
+                        everything you want forever and Ever :3 ilysm!!! 💜💛<br>
+                        🖍️<font class="fancytxt"> Nic</font>
+                        </p>
+                    </div>
+                </div>
+            </span>
+            <span class="sphidden draggable" id="sphiddenF">
+                <div class="msgcase">
+                    <div class="msgbgR">
+                        <div class="msg"></div>
+                    </div>
+                    <div class="msgbox">
+                        <p style="margin-top:3px;margin-bottom:0px;">
+                            <font class="pinktxt">Happy birthday PanPan!</font><br>
+                            I'm glad to have met you and I
+                            appreciate you so much. Thank you for the wonderful times
+                            we've spent together..
+                        </p>
+                        <p class="readmore">
+                            click cream to read more!
+                        </p>
+                    </div>
+                </div>
+            </span>
+            <span class="sphidden draggable" id="sphidden7">
+                <div class="msgcase">
+                    <div class="msgbgG">
+                        <div class="msg"></div>
+                    </div>
+                    <div class="msgbox">
+                        <p style="margin-top:25px;">
+                            <font class="pinktxt">Happy birthday Panpan!!!</font>
+                            Wishing you a great birthday and wonderful year ahead of you!<br>
+                            🖍️<font class="fancytxt"> Alicia</font>
+                        </p>
+                    </div>
+                </div>
+            </span>
+            </span>
+            <span class="sphidden draggable" id="sphiddenG">
+                <div class="msgcase">
+                    <div class="msgbgP">
+                        <div class="msg"></div>
+                    </div>
+                    <div class="msgbox">
+                        <p style="margin-top:22px;">
+                            <font class="pinktxt">feliz cumpleaños PP </font>🐶💖🌈🌷
+                            thank you for being a wonderful friend, have a good one!!!
+                            you are so loved<br>
+                            🖍️<font class="fancytxt"> mac</font>
+                        </p>
+                    </div>
+                </div>
+            </span>
+            </span>
+            <span class="sphidden draggable" id="sphidden8">
+                <div class="msgcase">
+                    <div class="msgbgB">
+                        <div class="msg"></div>
+                    </div>
+                    <div class="msgbox">
+                        <p style="margin-top:13px;">
+                        <font class="pinktxt">HAPPY BIRTHDAY PANPAN</font> 🐶 🫶 🐱
+                        i hope you have an epic and wonderful birthday! <br>
+                        <font style="color:#24b2ff">casting small ppkawa</font><br>
+                        🖍️<font class="fancytxt"> tulip</font>
+                        </p>
+                    </div>
+                </div>
+            </span>
+            <span class="sphidden draggable" id="sphiddenH">
+                <div class="msgcase">
+                    <div class="msgbgO">
+                        <div class="msg"></div>
+                    </div>
+                    <div class="msgbox">
+                        <p style="margin-top:0px;">
+                            <font class="pinktxt">HAPPY BIRTHDAY PANPAN!!!</font> :cakeeee<br>
+                            oh shit i hit enter too early<br>
+                            🖍️<font class="fancytxt"> aspho</font><br><br>
+                            <i>p.s. click on the cream for a surprise</i>
+                        </p>
+                    </div>
+                </div>
+            </span>
+            <span class="sphidden draggable" id="sphidden9">
+                <div class="msgcase">
+                    <div class="msgbgPu">
+                        <div class="msg"></div>
+                    </div>
+                    <div class="msgbox">
+                        <p style="margin-top:-5px;">
+                            <font class="pinktxt">Happy birthday darling panpan!!</font>
+                            I love u sooooo muchh and
+                            I hope your day is as bright and sparkling as you!! 💜💛
+                            Take good care dearly pp~ let’s play touys again soon okay!
+                            MWAH!! <br>
+                            🖍️<font class="fancytxt"> Han Seacozy</font>
+                        </p>
+                    </div>
+                </div>
+            </span>
+            <span class="sphidden draggable" id="sphiddenI">
+                <div class="msgcase">
+                    <div class="msgbgR">
+                        <div class="msg"></div>
+                    </div>
+                    <div class="msgbox">
+                        <p style="margin-top:0px;">
+                            <font class="pinktxt">HAPPY BIRTDHHAAASYYY PANPAANNNNN</font>
+                            🫶🏼🫶🏼🫶🏼🫶🏼🫶🏼💓💓💞💞💖💖💞💞💓🍰🍰🍰🍰🍰🍰🍰 <br>
+                            🖍️<font class="fancytxt"> nirpy</font>
+                        </p>
+                    </div>
+                </div>
+            </span>
+            <span class="sphidden draggable" id="sphidden10">
+                <div class="msgcase">
+                    <div class="msgbgG">
+                        <div class="msg"></div>
+                    </div>
+                    <div class="msgbox">
+                        <p style="margin-top:6px;">
+                        <font class="pinktxt">happy birthday PP!!!!!</font><br>
+                        I hope u have an awesome birthday 🥺
+                        The sthw keychain u made like 5 billion years ago is still
+                        on my wall.<br>
+                        🖍️<font class="fancytxt"> oto</font>
+                        </p>
+                    </div>
+                </div>
+            </span>
+            <span class="sphidden draggable" id="sphiddenJ">
+                <div class="msgcase">
+                    <div class="msgbgP">
+                        <div class="msg"></div>
+                    </div>
+                    <div class="msgbox">
+                        <p style="margin:3px 0px;">
+                            <font class="pinktxt">Happy Birthday Panpan!</font>
+                            I hope you have an absolutely wonderful & magical birthday.
+                            May this year be your best year yet!
+                            I'm so..<br>
+                        </p>
+                        <p class="readmore">
+                            click cream to read more!
+                        </p>
+
+                    </div>
+                </div>
+            </span>
+            <span class="sphidden draggable" id="sphidden1">
+                <div class="msgcase">
+                    <div class="msgbgB">
+                        <div class="msg"></div>
+                    </div>
+                    <div class="msgbox">
+                        <p style="margin-top:-9px;">
+                        🌈✨️🤍🍎🎈LOVE YOU PANPAN!!!
+                        <font class="pinktxt">HAPPY MAGICAL BIRTHDAY</font>
+                        🌈✨️🤍🍎🎈
+                        I HOPE YOUR DAY IS AS PAN-DERFUL AS YOU ARE 🥳🎂🎉🎁<br>
+                        Love munchiieeess~ ❤️ <br>
+                        🖍️<font class="fancytxt">jisaaaa jii </font>
+                        </p>
+                    </div>
+                </div>
+            </span>
+
+
+            <div class="msgStat hidden" id="StatD">
+                <div class="fullmsg">
+                    Happy Birthday Panpan!! 🎂💛💜 I’m happy to be able to call you my
+                    friend for all these years ☺️ Seeing your tweets on my tl always
+                    makes me smile. I hope you have a lovely wonderful birthday!!<br>
+                    🖍️<font class="fancytxt"> Dev</font>
+                </div>
+            </div>
+
+            <div class="msgStat hidden" id="StatF">
+                <div class="fullmsg">
+                    Happy birthday PanPan! <br>
+                    I'm glad to have met you and I appreciate you so much.
+                    Thank you for the wonderful times we've spent together and that more wonderful
+                    times and fortune will come your way. I wish you a wonderful birthday and blessings
+                    for the year coming ahead.<br>
+                    🖍️<font class="fancytxt"> Autumn</font>
+                </div>
+            </div>
+
+            <div class="msgStat hidden" id="StatH">
+                    <img src="./assets/aspho.png" class="noselect" style="position:absolute;top:100px;left:155px;width:250px;">
+            </div>
+
+            <div class="msgStat hidden" id="StatJ">
+                <div class="fullmsg" style="left:-40px;width:450px;height:210px;">
+                    <img src="./assets/mimi.png" class="noselect">
+                </div>
+            </div>
+
+        </div>
+        <div id="btmborder"></div>
+        <div id="btmborder2"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,702 @@
+body {
+    background-image: url(./assets/flowerbg.png);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+}
+
+.fancytxt {
+    color: #a960d3;
+    font-weight: 600;
+}
+
+.draggable {
+    position: absolute;
+}
+.noselect {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.glow {
+    cursor: pointer;
+    filter: drop-shadow(0 0 1px #ffffffa4);
+}
+
+.glowing:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 6px #ff83b0)!important;
+    /*filter: drop-shadow(0 0 6px #ffb1cd) drop-shadow(0 0 1px #ffacca)!important;*/
+    /*filter: drop-shadow(0 0 6px #ffd446)!important;*/
+    /*filter: drop-shadow(0 0 5px rgb(216, 117, 255))!important;*/
+}
+
+.sphidden {
+    display: none;
+    position: absolute;
+}
+
+#middle:has(#creamA:hover) #sphiddenA,
+#middle:has(#strawb2:hover) #sphidden2,
+#middle:has(#creamB:hover) #sphiddenB,
+#middle:has(#strawb3:hover) #sphidden3, 
+#middle:has(#creamC:hover) #sphiddenC, 
+#middle:has(#strawb4:hover) #sphidden4, 
+#middle:has(#creamD:hover) #sphiddenD,
+#middle:has(#strawb5:hover) #sphidden5,
+#middle:has(#creamE:hover) #sphiddenE,
+#middle:has(#strawb6:hover) #sphidden6,
+#middle:has(#creamF:hover) #sphiddenF,
+#middle:has(#strawb7:hover) #sphidden7,
+#middle:has(#creamG:hover) #sphiddenG,
+#middle:has(#strawb8:hover) #sphidden8,
+#middle:has(#creamH:hover) #sphiddenH,
+#middle:has(#strawb9:hover) #sphidden9,
+#middle:has(#creamI:hover) #sphiddenI,
+#middle:has(#strawb10:hover) #sphidden10,
+#middle:has(#creamJ:hover) #sphiddenJ,
+#middle:has(#strawb1:hover) #sphidden1 {
+display: block;
+}
+
+#sphiddenA {
+    top: -170px;
+    left: -205px;
+}
+
+#sphidden2 {
+    top: -171px;
+    left: 430px;
+}
+
+#sphiddenB {
+    top: -114px;
+    left: 467px;
+}
+
+#sphidden3 {
+    top: -58px;
+    left: 500px;
+}
+
+#sphiddenC {
+    top: -5px;
+    left: 512px;
+}
+
+#sphidden4 {
+    top: 62px;
+    left: 517px;
+}
+
+#sphiddenD {
+    top: 132px;
+    left: 501px;
+}
+
+#sphidden5 {
+    top: 198px;
+    left: 451px;
+}
+
+#sphiddenE {
+    top: 261px;
+    left: 403px;
+}
+
+#sphidden6 {
+    top: 304px;
+    left: 335px;
+}
+
+#sphiddenF {
+    top: 342px;
+    left: 240px;
+}
+
+#sphidden7 {
+    top: 349px;
+    left: 115px;
+}
+
+#sphiddenG {
+    top: 331px;
+    left: -63px;
+}
+
+#sphidden8 {
+    top: 299px;
+    left: -154px;
+}
+
+#sphiddenH {
+    top: 235px;
+    left: -212px; 
+}
+
+#sphidden9 {
+    top: 167px;
+    left: -259px;
+}
+
+#sphiddenI {
+    top: 105px;
+    left: -288px; 
+}
+
+#sphidden10 {
+    top: 37px;
+    left: -293px;
+}
+
+#sphiddenJ {
+    top: -33px;
+    left: -283px; 
+}
+
+#sphidden1 {
+    top: -107px;
+    left: -251px;
+}
+
+/**************** MAIN STYLING ****************/
+#main {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    height: 850px;
+    width: 100%;
+    margin-top: -425px;
+
+    /*background-color: aliceblue;*/
+}
+
+#topborder {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+
+    height: 50px;
+    width: 100%;
+
+    background-image: url(./assets/cream3.png);
+    background-size: contain;
+}
+
+#topborder2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    height: 50px;
+    width: 100%;
+
+    background-image: url(./assets/frilldivider2.png);
+    background-size: contain;
+}
+
+#btmborder {
+    position: absolute;
+    bottom: 60px;
+    left: 0px;
+
+    height: 50px;
+    width: 100%;
+
+    background-image: url(./assets/cream2.png);
+    background-size: contain;
+}
+
+#btmborder2 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+    height: 50px;
+    width: 100%;
+
+    background-image: url(./assets/frilldivider2.png);
+    background-size: contain;
+}
+
+#middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    width: 525px;
+    height: 484px;
+
+    margin-top: -242px;
+    margin-left: -262.5px;
+
+    text-align: center;
+    /*background-color: pink;*/
+}
+
+#cloth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 900px;
+    height: 520px;
+
+    margin-top: -205px;
+    margin-left: -450px;
+
+    -webkit-mask-image: url(./assets/clothmask.png);
+    mask-image: url(./assets/clothmask.png);
+    -webkit-mask-size: 900px;
+    mask-size: 900px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    background-image: url(./assets/redplaid.png);
+    background-size: 1900px;
+
+    /*filter: hue-rotate(10deg) saturate(200%);
+
+    opacity: 0.5;*/
+}
+
+#plate {
+    position: absolute;
+    top: -25px;
+    left: 0px;
+
+    width: 525px;
+
+    /*opacity: 0.5;*/
+}
+
+#cakebody {
+    position: absolute;
+    top: -25px;
+    left: 0px;
+
+    width: 525px;
+
+    /*opacity: 0.5;*/
+}
+
+.strawb {
+    position: absolute;
+
+    width: 53px;
+    height: 63px;
+
+    background-image: url(./assets/strawberry.png);
+    background-size: contain;
+
+    /*background-color: #ff9ec2;*/
+}
+
+.cream {
+    position: absolute;
+
+    width: 65px;
+    height: 66px;
+
+    color: red;
+
+    background-image: url(./assets/cream.png);
+    background-size: contain;
+
+    /*background-color: #ff9ec2;*/
+}
+
+#candle1 {
+    z-index: 0;
+    position: absolute;
+    top: 85px;
+    left: 125px;
+
+    width: 60px;
+    height: 112px;
+
+    background-image: url(./assets/candle1.png);
+    background-size: contain;
+}
+
+#candle1:hover span {
+    display: block;
+}
+
+.msgcase {
+    z-index: 1;
+    position: absolute;
+    padding-top: 80px;
+    padding-left: 45px;
+
+    width: 255px;
+    height: 198px;
+}
+
+.msgbox {
+    display: block;
+    position: relative;
+    text-align: center;
+
+    width: 210px;
+    height: 115px;
+
+    overflow: visible;
+}
+
+.msgbgG {
+    -webkit-mask-image: url(./assets/cloudmask.png);
+    mask-image: url(./assets/cloudmask.png);
+    -webkit-mask-size: 300px;
+    mask-size: 300px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 300px;
+    height: 278px;
+
+    background-image: url(./assets/redplaid.png);
+    background-size: 1900px;
+    filter: hue-rotate(120deg);
+}
+
+.msgbgR {
+    -webkit-mask-image: url(./assets/cloudmask.png);
+    mask-image: url(./assets/cloudmask.png);
+    -webkit-mask-size: 300px;
+    mask-size: 300px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 300px;
+    height: 278px;
+
+    background-image: url(./assets/redplaid.png);
+    background-size: 1900px;
+    filter: hue-rotate(20deg);
+}
+
+.msgbgP {
+    -webkit-mask-image: url(./assets/cloudmask.png);
+    mask-image: url(./assets/cloudmask.png);
+    -webkit-mask-size: 300px;
+    mask-size: 300px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 300px;
+    height: 278px;
+
+    background-image: url(./assets/redplaid.png);
+    background-size: 1900px;
+}
+
+.msgbgB {
+    -webkit-mask-image: url(./assets/cloudmask.png);
+    mask-image: url(./assets/cloudmask.png);
+    -webkit-mask-size: 300px;
+    mask-size: 300px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 300px;
+    height: 278px;
+
+    background-image: url(./assets/redplaid.png);
+    background-size: 1900px;
+    filter: hue-rotate(250deg);
+}
+
+.msgbgPu {
+    -webkit-mask-image: url(./assets/cloudmask.png);
+    mask-image: url(./assets/cloudmask.png);
+    -webkit-mask-size: 300px;
+    mask-size: 300px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 300px;
+    height: 278px;
+
+    background-image: url(./assets/redplaid.png);
+    background-size: 1900px;
+    filter: hue-rotate(310deg);
+}
+
+.msgbgO {
+    -webkit-mask-image: url(./assets/cloudmask.png);
+    mask-image: url(./assets/cloudmask.png);
+    -webkit-mask-size: 300px;
+    mask-size: 300px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 300px;
+    height: 278px;
+
+    background-image: url(./assets/redplaid.png);
+    background-size: 1900px;
+    filter: hue-rotate(60deg) brightness(1.1);
+}
+
+.msg {
+    -webkit-mask-image: url(./assets/cloudmask.png);
+    mask-image: url(./assets/cloudmask.png);
+    -webkit-mask-size: 260px;
+    mask-size: 260px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    margin-left: -130px;
+    margin-top: -120.5px;
+
+    width: 260px;
+    height: 241px;
+
+    background-color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+.msgStat {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -290px;
+    padding-left: 100px;
+
+    width: 480px;
+    height: 435px;
+
+    filter: drop-shadow(0 0 7px rgb(255, 163, 209));
+    background-image: url(./assets/stat.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    border: 15px solid;
+    border-image: url(./assets/laceborder.png) 6 repeat;
+    /*border-image-outset: 5px; */
+}
+
+.fullmsg {
+    position: relative;
+    top: 130px;
+    left: 11px;
+    padding: 10px;
+
+    width: 320px;
+    height: 190px;
+
+    overflow-y: auto;
+    background-color: #ffffff50;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 5px #fff)drop-shadow(0 0 5px #fff);
+}
+
+::-webkit-scrollbar {
+width: 9px;
+height: 5px;
+scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-track {
+/* border: 1px solid black; */
+border-radius: 20px;
+background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+background: linear-gradient(90deg, #ffdc68, #ffeeb8, #ffdc68);
+border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:active {
+background: linear-gradient(90deg, #dba3fc, #edcdff, #dba3fc);
+}
+
+.bounce:hover {
+    animation: bounce 0.3s infinite;
+    -webkit-animation: bounce 0.3s infinite;
+    -moz-animation: bounce 0.3s infinite;
+    -o-animation: bounce 0.3s infinite;
+}
+
+.bounce:active {
+    animation: none;
+}
+
+/* bounce animation from https://stackoverflow.com/questions/40628410/trying-to-make-a-link-bounce-on-hover */
+@-webkit-keyframes bounce {
+    0%,  
+    100% {
+    -webkit-transform: translateY(0);
+}
+    50% {
+        -webkit-transform: translateY(-7px);
+}
+}
+@-moz-keyframes bounce {
+    0%, 
+    100% {
+    -moz-transform: translateY(0);
+}
+    50% {
+    -moz-transform: translateY(-7px);
+}
+}
+@-o-keyframes bounce {
+    0%,
+    100% {
+    -o-transform: translateY(0);
+}
+    50% {
+    -o-transform: translateY(-7px);
+}
+}
+@keyframes bounce {
+    0%,  
+    100% {
+        transform: translateY(0);
+}
+    50% {
+        transform: translateY(-7px);
+}
+}
+
+.spinning:hover {
+    cursor: pointer;
+    animation-name: spin;
+    animation-duration: 1800ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+.spinning:active {
+    cursor: pointer;
+    animation-name: spin;
+    animation-duration: 130ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.moveup {
+    transition: ease 0.3s;
+}
+
+.moveup:hover {
+    cursor: pointer;
+    transform: translateY(-7px);
+}
+
+#soty {
+    position: absolute;
+    top: 73px;
+    left: -117px;
+    
+    height: 102px;
+    width: 110px;
+
+    background-image: url(./assets/ststicker.png);
+    background-size: contain;
+
+    transform:scaleX(-1) rotate(28deg);
+    transition: ease 0.3s;
+}
+
+#soty:hover {
+    top: 68px;
+}
+
+#soty:hover span {
+    display: block;
+}
+
+#hiwo {
+    position: absolute;
+    top: 63px;
+    left: 529px;
+
+    height: 116px;
+    width: 115px;
+
+    background-image: url(./assets/hwsticker.png);
+    background-size: contain;
+
+    transform: rotate(7deg);
+}
+
+#hiwo:hover {
+    top: 58px;
+}
+
+#hiwo:hover span {
+    display: block;
+}
+.clickglow {
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.clickglow:active {
+    filter: drop-shadow(0 0 5px #ff83b0);
+}
