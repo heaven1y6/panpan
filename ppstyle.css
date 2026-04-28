@@ -38,7 +38,9 @@ body {
     cursor: grabbing;
 }
 
-.noselect {
+.noselect,
+.strawb,
+.cream {
     -webkit-user-drag: none;
     user-select: none;
     -moz-user-select: none;
@@ -315,6 +317,7 @@ display: block;
 
     width: 53px;
     height: 63px;
+    color: transparent;
 
     background-image: url(./assets/strawberry.png);
     background-size: contain;
@@ -328,7 +331,7 @@ display: block;
     width: 65px;
     height: 66px;
 
-    color: red;
+    color: transparent;
 
     background-image: url(./assets/cream.png);
     background-size: contain;

@@ -16,6 +16,8 @@
     <audio id="balltoss" src="./assets/balltoss.mp3"></audio>
     <audio id="waltz" src="./assets/waltz.mp3"></audio>
     <audio id="RetroTV" src="./assets/RetroTV.mp3"></audio>
+    <audio id="silly" src="./assets/silly.mp3"></audio>
+    <audio id="silly2" src="./assets/silly2.mp3"></audio>
 
     <div id="main">
         <div id="topborder2"></div>
@@ -23,7 +25,7 @@
         
         <div id="middle">
             <div id="cloth"></div>
-            <img src="./assets/Cake.png"  style="display:none;position:absolute;top:-25px;left:0px;width:525px">
+            <img src="./assets/Cake.png"  class="noselect" style="display:none;position:absolute;top:-25px;left:0px;width:525px">
             <img src="./assets/plate.png" class="noselect" id="plate" >
             <img src="./assets/cakebody.png" class="noselect" id="cakebody">
 
@@ -65,8 +67,17 @@
             
             <img src="./assets/redribbon.png" class="moveup noselect" style="z-index:0;position:absolute;top:179px;left:211px;width:100px;filter:hue-rotate(15deg)">
             <!-- <div id="candle1" class="glow bounce"></div> -->
-            <img src="./assets/candle1.png" class="glow bounce noselect" style="z-index: 0;position: absolute;top: 85px;left: 125px;width: 60px;height: 112px;">
-            <img src="./assets/candle2.png" class="glow bounce noselect" style="z-index:0;position:absolute;top:85px;left:339px;width:58px;">
+            <img src="./assets/candle1.png" 
+                title="click me!"
+                data-sound="silly"
+                class="glow bounce noselect"
+                style="z-index: 0;position: absolute;top: 85px;left: 125px;width: 60px;height: 112px;">
+            
+            <img src="./assets/candle2.png"
+                title="click me!"
+                data-sound="silly2"
+                class="glow bounce noselect"
+                style="z-index:0;position:absolute;top:85px;left:339px;width:58px;">
             
             <img src="./assets/button1.png" class="spinning noselect" style="position:absolute;top:23px;left:-357px;width:65px;">
             <img src="./assets/buttonfl2.png" class="spinning noselect" style="position:absolute;top:239px;left:-528px;width:72px;transform:rotate(-15deg);filter:hue-rotate(40deg) brightness(1.1)">
